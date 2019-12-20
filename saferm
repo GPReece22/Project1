@@ -1,6 +1,8 @@
 #! /scripts/bash
 # a command to remove files safely by moving them in to a sepcial waste directory
 # argument 1 is the file to remove
+# the files is copied form the current directory into the waste directory using cp
+# it is then remove from the current directory using rm
 
 if [ $# -eq 1 ]
 then
