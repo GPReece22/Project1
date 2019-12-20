@@ -1,0 +1,8 @@
+#! /scripts/bash
+# a command to list the names of the files in the waste bin and the number of bits in them
+#
+
+path=$HOME/project/waste
+cd $path
+echo "Files in the waste bin:"
+ls -n | awk '{print $9, $5}'
